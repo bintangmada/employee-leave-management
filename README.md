@@ -4,6 +4,8 @@ A Spring Boot app for managing employee leave requests, approvals, and remaining
 ## 📋 Description
 This project is an **Employee Leave Management System** designed to handle leave requests, manage balances, and allow HR/Admin users to approve or reject requests. It also provides a way for employees to view their remaining leave days and request time off.
 
+![Image](https://github.com/user-attachments/assets/491639b5-6c37-478d-9d15-9008c8bdd6d3)
+
 ## 🧠 1. Main Features
 
 ### For Employees:
