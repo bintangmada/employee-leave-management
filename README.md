@@ -1,5 +1,5 @@
 # employee-leave-management
-A Spring Boot app for managing employee leave requests, approvals, and remaining leave days
+A Spring Boot app for managing employee leave requests, approvals, and remaining leave days.
 
 ## 📋 Description
 This project is an **Employee Leave Management System** designed to handle leave requests, manage balances, and allow HR/Admin users to approve or reject requests. It also provides a way for employees to view their remaining leave days and request time off.
@@ -7,6 +7,7 @@ This project is an **Employee Leave Management System** designed to handle leave
 ## 🧠 1. Main Features
 
 ### For Employees:
+- **Register**: New users can register by providing necessary details (name, email, password).
 - **Login**: Secure login to access the system.
 - **View Leave Balance**: Check remaining leave days.
 - **Request Leave**: Submit leave requests with reasons and dates.
@@ -57,7 +58,7 @@ This project is an **Employee Leave Management System** designed to handle leave
 - **deletedStatus**: Indicates whether the leave request is deleted (soft delete).
 
 ## 🧭 3. Leave Request Flow
-1. Employee logs in.
+1. Employee registers and logs in.
 2. Employee selects leave dates and provides a reason.
 3. System checks available leave balance.
 4. If sufficient balance → store request with status `PENDING`.
@@ -77,7 +78,10 @@ Every change to an entity (like `LeaveRequest`) is tracked with an audit trail.
 
 ## 🎯 6. How to Run
 
-1. Clone this repository. -> git clone https://<token>@github.com/bintangmada/employee-leave-management.git -> contact me to get token (bintang.mada@gmail.com)
+1. Clone this repository:  
+   `git clone https://<token>@github.com/bintangmada/employee-leave-management.git`  
+   *Contact me to get the token: bintang.mada@gmail.com*
+   
 2. Set up the DBMS (MySQL).
 3. Configure application properties (`application.properties` or `application.yml`).
 4. Build and run the Spring Boot application.
