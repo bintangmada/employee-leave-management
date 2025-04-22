@@ -23,12 +23,14 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         String email = oauth2User.getAttribute("email");
         String name = oauth2User.getAttribute("name");
 
+        Role role = email.equalsIgnoreCase("bintang.mada@gmail.com") ? Role.ADMIN : Role.EMPLOYEE;
+
         // Simpan ke database kalau user belum ada
         userRepository.findByEmail(email).orElseGet(() -> {
             User user = new User();
             user.setEmail(email);
             user.setName(name);
-            user.setRole(Role.EMPLOYEE); // default role
+            user.setRole(role); // default role
             return userRepository.save(user);
         });
 
