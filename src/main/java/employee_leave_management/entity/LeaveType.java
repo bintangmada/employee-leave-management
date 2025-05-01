@@ -9,11 +9,42 @@ public class LeaveType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long leaveTypeId;
 
-    private String name;
+    private String code;
+    private String description;
 
-    @OneToMany(mappedBy = "leaveType")
-    private List<LeaveBalance> leaveBalances;
+    public LeaveType() {
+    }
+
+    public LeaveType(Long leaveTypeId, String code, String description) {
+        this.leaveTypeId = leaveTypeId;
+        this.code = code;
+        this.description = description;
+    }
+
+    public Long getLeaveTypeId() {
+        return leaveTypeId;
+    }
+
+    public void setLeaveTypeId(Long leaveTypeId) {
+        this.leaveTypeId = leaveTypeId;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
 

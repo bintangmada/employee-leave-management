@@ -31,11 +31,11 @@ public class User {
     private LocalDateTime deletedAt;
     private boolean deletedStatus;
 
-    @OneToMany(mappedBy = "user")
-    private List<LeaveRequest> leaveRequests;
-
-    @OneToMany(mappedBy = "user")
-    private List<LeaveBalance> leaveBalances;
+//    @OneToMany(mappedBy = "user")
+//    private List<LeaveRequest> leaveRequests;
+//
+//    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+//    private List<LeaveBalance> leaveBalances;
 
     public Long getId() {
         return id;
@@ -133,19 +133,19 @@ public class User {
         this.deletedStatus = deletedStatus;
     }
 
-    public List<LeaveRequest> getLeaveRequests() {
-        return leaveRequests;
-    }
-
-    public void setLeaveRequests(List<LeaveRequest> leaveRequests) {
-        this.leaveRequests = leaveRequests;
-    }
-
-    public List<LeaveBalance> getLeaveBalances() {
-        return leaveBalances;
-    }
-
-    public void setLeaveBalances(List<LeaveBalance> leaveBalances) {
-        this.leaveBalances = leaveBalances;
-    }
+//    public List<LeaveRequest> getLeaveRequests() {
+//        return leaveRequests;
+//    }
+//
+//    public void setLeaveRequests(List<LeaveRequest> leaveRequests) {
+//        this.leaveRequests = leaveRequests;
+//    }
+//
+//    public List<LeaveBalance> getLeaveBalances() {
+//        return leaveBalances;
+//    }
+//
+//    public void setLeaveBalances(List<LeaveBalance> leaveBalances) {
+//        this.leaveBalances = leaveBalances;
+//    }
 }
