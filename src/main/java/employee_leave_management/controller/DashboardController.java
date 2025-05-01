@@ -18,6 +18,10 @@ public class DashboardController {
         model.addAttribute("email", user.getEmail());
         model.addAttribute("role", user.getRole().name());
 
+//        model.addAttribute("leaveBalances", user.getLeaveBalances());
+//        model.addAttribute("leaveRequests", user.getLeaveRequests());
+
+
         return "dashboard"; // tampilkan dashboard.html
     }
 }
