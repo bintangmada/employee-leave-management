@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/leave-requests")
+        @RequestMapping("/leave-requests")
 public class LeaveRequestController {
 
     @Autowired
